@@ -31,18 +31,24 @@ $('.menu-toggle').click(function(e){
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  centerMode: true,
+  centerMode: false,
   variableWidth: true,
   infinite: true,
   focusOnSelect: true,
   touchMove: true,
+  easing:'linear',
    prevArrow:'<button class="slick-prev"> < </button>',
   nextArrow:'<button class="slick-next"> > </button>'
-  
-  
 
-});
-
+  
+  });
+  $('.slider').click(function(){
+  	console.log('ss');
+ 
+  $('.slick-current').toggleClass('ff');
+   $('[aria-hidden=true]').removeClass('ff');
+})
+  
 
 // var imgs = $('.slider img');
 // imgs.each(function(){
