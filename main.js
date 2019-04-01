@@ -9,27 +9,18 @@ $('.menu-toggle').click(function(e){
 
 });
 
-  $('.slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
+
+
+$('.slider').slick({
   centerMode: false,
   variableWidth: true,
   infinite: false,
+  slidesToScroll: 1,
   focusOnSelect: true,
-  touchMove: true,
-  easing:'linear',
-   prevArrow:'<button class="slick-prev"> < </button>',
-  nextArrow:'<button class="slick-next"> > </button>'
-
-  
-  });
-  $('.slide').click(function(){
-  	console.log('ss');
- $('.slide').removeClass('ff');
-  $(this).toggleClass('ff');
-   
-})
+  slidesToShow: 1,
+  arrows: false
+ 
+});
 
 
 });
